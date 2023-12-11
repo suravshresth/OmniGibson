@@ -76,7 +76,7 @@ cfg["objects"] = [ # (1)!
 ]
 ```
 
-1. Unlike the `"scene"` sub-config, we can define an arbitrary number of objects to load, so this is a `list` of `dict` istead of a single nested `dict`.
+1. Unlike the `"scene"` sub-config, we can define an arbitrary number of objects to load, so this is a `list` of `dict` instead of a single nested `dict`.
 2. **`OmniGibson`** supports multiple object classes, and we showcase an instance of each core class here. A [`USDObject`](../reference/objects/usd_object.md) is our most generic object class, and generates an object sourced from the `usd_path` argument.
 3. All objects **must** define the `name` argument! This is because **`OmniGibson`** enforces a global unique naming scheme, and so any created objects must have unique names assigned to them.
 4. `category` is used by all object classes to assign semantic segmentation IDs.
